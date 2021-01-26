@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Client area: Registration form{% endblock %}
+
+{% block body %}
+<div class="example-wrapper">
+    <h1>Please register</h1>
+    <div>
+        <p>View data in the <a href="{{ url('admin') }}">Admin Area</a></p>
+    </div>
+    <div id="messages"></div>
+    {{ form_start(form, {name: "client_registration"}) }}
+    <div>
+        {{ form_errors(form) }}
+    </div>
+    <div class="row">
+        <div class="col">
+            {{ form_row(form.firstName) }}
+        </div>
+        <div class="col">
+            {{ form_row(form.lastName) }}
+        </div>
+        <div class="col">
+            {{ form_row(form.file) }}
+        </div>
+        <button type="submit">Submit form</button>
+    </div>
+    {{ form_end(form) }}
+</div>
+{% endblock %}
