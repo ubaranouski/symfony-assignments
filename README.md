@@ -29,4 +29,4 @@ symfony server:start
 ## Content
 1. Client registration form on the Homepage `/`
 2. Rest api documentation `/api/doc`
-3. Protected admin webpage with the data received from the registration form `/admin`
+3. Protected admin webpage with the data received from the registration form `/admin`. Default credentials: `admin`/`123`
